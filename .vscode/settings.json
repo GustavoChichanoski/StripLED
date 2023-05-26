@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "files.encoding": "utf8",
+    "C_Cpp.clang_format_style": "Google",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+}
