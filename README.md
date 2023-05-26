@@ -2,6 +2,12 @@
 
 Este projeto consiste na criação de uma animação usando tiras de LED controladas por um Arduino. A animação será exibida na forma de padrões de luzes sequenciais, proporcionando um efeito visual interessante.
 
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
+![Espressif](https://img.shields.io/badge/espressif-E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
 * * *
 
 ## Componentes Necessários
@@ -17,6 +23,32 @@ Conecte a tira de LED RGB ao Arduino. Certifique-se de seguir as instruções do
 Conecte a fonte de alimentação à tira de LED, respeitando as especificações de voltagem e corrente necessárias.
 
 Se estiver utilizando uma protoboard, faça as conexões entre o Arduino, a tira de LED e a fonte de alimentação na protoboard para facilitar a organização dos fios.
+
+* * *
+
+## Instalação
+
+Instale os programas:
+
+[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/download)
+
+Instale a extensão PlatformIO:
+
+[![Platform Io](./imgs/PlatformIO_logo.svg)](https://platformio.org/install/ide?install=vscode)
+
+Se o computador ficar muito lento desinstale o Vscode e instale o Sublime Text:
+
+[![Sublime Text](./imgs/sublime-text.svg)](https://www.sublimetext.com/download_thanks?target=win-x64)
+
+Instale o python (tenha certeza de adicionar o python a suas variaveis de ambiente):
+
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/ftp/python/3.11.3/python-3.11.3-amd64.exe)
+
+![Img](imgs/python-installer-add-path.png)
+
+Instale o PlatformIO via pip:
+
+`pip install -U platformio`
 
 * * *
 
