@@ -7,6 +7,9 @@ Este projeto consiste na criação de uma animação usando tiras de LED control
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
 ![Espressif](https://img.shields.io/badge/espressif-E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Bluetooth](./imgs/ble_badge.svg)
 
 * * *
 
@@ -21,6 +24,32 @@ Este projeto consiste na criação de uma animação usando tiras de LED control
 
 Conecte a tira de LED RGB ao Arduino. Certifique-se de seguir as instruções do fabricante para a correta conexão dos pinos de dados, alimentação e aterramento.
 Conecte a fonte de alimentação à tira de LED, respeitando as especificações de voltagem e corrente necessárias.
+
+Aqui está um exemplo de como você pode gerar uma matriz de LED animada usando Markdown:
+
+markdown
+Copy code
+# Matriz de LED Animada
+
+Neste projeto, criaremos uma animação para uma matriz de LED usando Markdown.
+
+## Pré-requisitos
+
+- Placa Arduino compatível
+- Tira de LED endereçável
+- Biblioteca FastLED (instalada usando o PlatformIO)
+
+## Esquema de Conexão
+
+Conecte a tira de LED ao Arduino da seguinte maneira:
+
++--------------+
+| Tira de LED  |
++--------------+
+| DIN          | --> Pino Digital do Arduino
+| VCC | --> 5V do Arduino
+| GND | --> GND do Arduino
++--------------+
 
 Se estiver utilizando uma protoboard, faça as conexões entre o Arduino, a tira de LED e a fonte de alimentação na protoboard para facilitar a organização dos fios.
 
@@ -50,6 +79,8 @@ Instale o PlatformIO via pip:
 
 `pip install -U platformio`
 
+Instale o proteus:
+
 * * *
 
 ## Execução
@@ -69,16 +100,38 @@ Conecte o Arduino ao seu computador por meio do cabo USB.
 
 No PlatformIO, abra o terminal embutido ou um terminal externo na pasta do projeto.
 Execute o comando pio run para compilar o código e verificar se há erros.
+
+`pio run`
+
 Após a conclusão da compilação sem erros, execute o comando
 
-`pio run --target`
+Carrega o código no Arduino`
+
+`pio run --target upload`
 
 upload para enviar o código compilado para o Arduino.
 
 Aguarde o término do processo de upload e verifique se o código foi executado com sucesso no Arduino.
-Certifique-se de que o PlatformIO esteja configurado corretamente com as bibliotecas necessárias para o controle da tira de LED, como a biblioteca FastLED. Se você não tiver instalado as bibliotecas, você pode adicioná-las ao arquivo "platformio.ini" na seção `[env:nome_do_ambiente]` usando a diretiva lib_deps, por exemplo:
+Certifique-se de que o PlatformIO esteja configurado corretamente com as bibliotecas necessárias para o controle da tira de LED, como a biblioteca FastLED. Se você não tiver instalado as bibliotecas, você pode adicioná-las ao arquivo "platformio.ini" na seção `[env:megaatmega2560]` usando a diretiva lib_deps, por exemplo:
+
+Esquema Proposto:
+
+![Esquema Elétrico](imgs/esquema.svg)
 
 * * *
+
+## TO DO
+
+A fazer:
+
+* [ ] Instalar VSCode
+* [ ] Instalar o Platform IO
+* [ ] Instalar o Proteus
+* [ ] Simular o projeto no Proteus
+
+Feito :fist_right:
+
+* [ ] Começar
 
 ## Data Final 📆
 
