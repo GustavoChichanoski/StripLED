@@ -13,23 +13,28 @@ Este projeto consiste na criação de uma animação usando tiras de LED control
 
 * * *
 
+## Sumario
+
+- [Projeto de Animação com Tiras de LED em Arduino](#projeto-de-animação-com-tiras-de-led-em-arduino)
+  - [Sumario](#sumario)
+  - [Componentes Necessários](#componentes-necessários)
+  - [Matriz de LED Animada](#matriz-de-led-animada)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Esquema de Conexão](#esquema-de-conexão)
+  - [Instalação](#instalação)
+  - [Execução](#execução)
+  - [TO DO](#to-do)
+  - [Data Final 📆](#data-final-)
+
 ## Componentes Necessários
 
-* Arduino Uno
-* Tira de LED RGB endereçável
-* Cabos de conexão
-* Fonte de alimentação para a tira de LED
-* Protoboard (opcional)
-* Montagem do Circuito
+- Arduino Uno
+- Tira de LED RGB endereçável
+- Cabos de conexão
+- Fonte de alimentação para a tira de LED
+- Protoboard (opcional)
 
-Conecte a tira de LED RGB ao Arduino. Certifique-se de seguir as instruções do fabricante para a correta conexão dos pinos de dados, alimentação e aterramento.
-Conecte a fonte de alimentação à tira de LED, respeitando as especificações de voltagem e corrente necessárias.
-
-Aqui está um exemplo de como você pode gerar uma matriz de LED animada usando Markdown:
-
-markdown
-Copy code
-# Matriz de LED Animada
+## Matriz de LED Animada
 
 Neste projeto, criaremos uma animação para uma matriz de LED usando Markdown.
 
@@ -43,13 +48,11 @@ Neste projeto, criaremos uma animação para uma matriz de LED usando Markdown.
 
 Conecte a tira de LED ao Arduino da seguinte maneira:
 
-+--------------+
-| Tira de LED  |
-+--------------+
-| DIN          | --> Pino Digital do Arduino
-| VCC | --> 5V do Arduino
-| GND | --> GND do Arduino
-+--------------+
+Pinos da tira | Função
+:----|:----
+DIN | --> Pino Digital do Arduino
+VCC | --> 5V do Arduino
+GND | --> GND do Arduino
 
 Se estiver utilizando uma protoboard, faça as conexões entre o Arduino, a tira de LED e a fonte de alimentação na protoboard para facilitar a organização dos fios.
 
@@ -77,7 +80,9 @@ Instale o python (tenha certeza de adicionar o python a suas variaveis de ambien
 
 Instale o PlatformIO via pip:
 
-`pip install -U platformio`
+~~~shell
+pip install -U platformio
+~~~
 
 Instale o proteus:
 
@@ -101,13 +106,17 @@ Conecte o Arduino ao seu computador por meio do cabo USB.
 No PlatformIO, abra o terminal embutido ou um terminal externo na pasta do projeto.
 Execute o comando pio run para compilar o código e verificar se há erros.
 
-`pio run`
+~~~shell
+pio run
+~~~
 
 Após a conclusão da compilação sem erros, execute o comando
 
 Carrega o código no Arduino`
 
-`pio run --target upload`
+~~~shell
+pio run --target upload
+~~~
 
 upload para enviar o código compilado para o Arduino.
 
@@ -124,14 +133,14 @@ Esquema Proposto:
 
 A fazer:
 
-* [ ] Instalar VSCode
-* [ ] Instalar o Platform IO
-* [ ] Instalar o Proteus
-* [ ] Simular o projeto no Proteus
+- [ ] Instalar VSCode
+- [ ] Instalar o Platform IO
+- [ ] Instalar o Proteus
+- [ ] Simular o projeto no Proteus
 
 Feito :fist_right:
 
-* [ ] Começar
+- [x] Começar
 
 ## Data Final 📆
 
