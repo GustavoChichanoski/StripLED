@@ -31,7 +31,7 @@ uint64_t vector2uint64_t(const uint8_t *vector) {
 /// @param color
 /// @param c
 /// @return
-uint64_t color_char(uint32_t color, char c) {
+uint64_t color_char(char c) {
 #if USE_FONT_OPEN == 0
 
   if (c >= '0' && c <= '9') return vector2uint64_t(font8x8[c - '0']);

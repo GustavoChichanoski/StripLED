@@ -29,15 +29,15 @@ void setup() {
 }
 
 void plotCharacter(char character, CRGB color) {
-  const uint8_t* bitmap = color_char(0, character);
-  if (bitmap == nullptr) return;
-  for (int i = 0; i < 8; i++) {
-    for (int j = 0; j < 8; j++) {
-      leds[i * 8 + j] = bitRead(bitmap[i], j) ? color : CRGB::Black;
+  uint64_t bitmap = color_char(character);
+  for (int8_t i = 0; i < 8; i++) {
+    for (int8_t j = 0; j < 8; j++) {
+      leds[i * 8 + j] = bitRead(bitmap, (7 - i) * 8 + (7 - j)) ? color : CRGB::Black;
     }
   }
   FastLED.show();
 }
+
 char c = '0';
 
 void loop() {

@@ -1086,6 +1086,6 @@ static const uint8_t font8x8[][8] = {
     }};
 #endif
 
-uint64_t color_char(uint32_t color, char c);
+uint64_t color_char(char c);
 
 #endif
