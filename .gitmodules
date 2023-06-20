@@ -1,0 +1,6 @@
+[submodule "makefiles/arduino"]
+	path = makefiles/arduino
+	url = https://github.com/sudar/Arduino-Makefile
+[submodule "libs/fonts"]
+	path = libs/fonts
+	url = git@github.com:dhepper/font8x8.git

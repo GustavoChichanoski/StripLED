@@ -4,5 +4,6 @@
     "files.encoding": "utf8",
     "C_Cpp.clang_format_style": "Google",
     "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "cmake.sourceDirectory": "C:/Users/meupc/OneDrive/Documentos/PlatformIO/Projects/StripLED2/.pio/libdeps/megaatmega2560/FastLED"
 }
