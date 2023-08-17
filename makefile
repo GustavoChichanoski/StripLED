@@ -12,8 +12,13 @@ UNAME := $(shell uname)
 ARDUINO_DIR = C:/'Program Files (x86)'/Arduino
 ARDMK_DIR = makefiles/arduino
 
+ENV := arduino
+
 ifeq ($(UNAME), Linux)
 	ARDUINO_DIR = /mnt/c/'Program Files (x86)'/Arduino
+	ENV := linux
+else
+	ENV := windows
 endif
 
 ifeq ($(UNAME), Windows_NT)
@@ -60,7 +65,10 @@ CPP_OBJECTS := $(patsubst $(SRCDIR)/%.cpp, $(BUILD)/%.o, $(CPP_FILES))
 INCLUDE_FLAGS = $(call add_include_flag,$(INCDIR))
 
 # Default target
-all: $(BUILD) $(TARGET)
+all: run
+
+run:
+	pio run -e ${ENV} -t exec 
 
 # Target for linking the executable
 $(TARGET): $(C_OBJECTS) $(CPP_OBJECTS)

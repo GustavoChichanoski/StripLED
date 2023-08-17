@@ -3,10 +3,10 @@
 
 #include "FastLED.h"
 #else
+#include <stdio.h>
+
 #include "simulator.hpp"
 #endif
-
-#include <stdio.h>
 
 #include "config.hpp"
 #include "font.hpp"
